@@ -58,5 +58,18 @@
             "@coverage-check",
             "@infection"
         ]
+    },
+    "archive": {
+        "exclude": [
+            "docs",
+            "tests",
+            ".editorconfig",
+            ".gitignore",
+            "infection.json",
+            "phpcs.xml.dist",
+            "phpstan.neon",
+            "phpunit.xml.dist",
+            "README.md"
+        ]
     }
 }
