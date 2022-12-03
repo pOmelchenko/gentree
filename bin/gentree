@@ -1,0 +1,4 @@
+#!/usr/bin/env php
+<?php
+
+echo 'Hello form gentree!' . PHP_EOL;

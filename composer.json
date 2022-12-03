@@ -59,6 +59,9 @@
             "@infection"
         ]
     },
+    "bin": [
+        "bin/gentree"
+    ],
     "archive": {
         "exclude": [
             "docs",
