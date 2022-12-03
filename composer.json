@@ -1,0 +1,33 @@
+{
+    "name": "dev-omelchenko/gentree",
+    "description": "csv to json converter",
+    "type": "library",
+    "homepage": "https://omelchenko.dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pavel Omelchenko",
+            "email": "p.Omelchenko@gmail.com"
+        }
+    ],
+    "support": {
+        "email": "support@omelchenko.dev"
+    },
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevOmelchenko\\Gentree\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DevOmelchenkoTest\\Gentree\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
