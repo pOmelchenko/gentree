@@ -7,8 +7,13 @@ use PHPUnit\Framework\TestCase;
 
 class GentreeTest extends TestCase
 {
+    public function testName(): void
+    {
+        self::assertEquals('Gentree', Gentree::name());
+    }
+
     public function testVersion(): void
     {
-        self::assertEquals('v0.0.0', Gentree::version());
+        self::assertEquals('0.0.0', Gentree::version());
     }
 }

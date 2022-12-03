@@ -1,4 +1,17 @@
 #!/usr/bin/env php
 <?php
 
-echo 'Hello form gentree!' . PHP_EOL;
+use DevOmelchenko\Gentree\Gentree;
+use DevOmelchenko\Gentree\ParserCommand;
+use Symfony\Component\Console\Application;
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+$app = new Application(Gentree::name(), Gentree::version());
+
+$command = new ParserCommand(dirname(__DIR__));
+
+$app->add($command);
+$app->setDefaultCommand($command->getName(), true);
+
+$app->run();
