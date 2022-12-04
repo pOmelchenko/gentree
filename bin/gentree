@@ -9,7 +9,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $app = new Application(Gentree::name(), Gentree::version());
 
-$command = new ParserCommand(dirname(__DIR__));
+$command = new ParserCommand(new Gentree());
 
 $app->add($command);
 $app->setDefaultCommand($command->getName(), true);
